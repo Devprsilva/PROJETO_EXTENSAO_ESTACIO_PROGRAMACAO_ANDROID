@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Calendario Cultural",
+    "slug": "calendario-cultural",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icone-app-calendario-cultural.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/icone-app-calendario-cultural.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cabofrio.calendariocultural",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "remote-notification"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icone-app-calendario-cultural.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.cabofrio.calendariocultural",
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "SCHEDULE_EXACT_ALARM"
+      ],
+      "versionCode": 1,
+      "softwareKeyboardLayoutMode": "pan",
+      "allowBackup": true,
+      "googleServicesFile": false
+    },
+    "web": {
+      "favicon": "./assets/icone-app-calendario-cultural.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icone-app-calendario-cultural.png",
+          "color": "#ffffff",
+          "sounds": [
+            "./assets/notification-sound.wav"
+          ]
+        }
+      ]
+    ],
+    "newArchEnabled": true,
+    "extra": {
+      "eas": {
+        "projectId": "e037e7bc-2564-413e-a31a-5964e21a2f77"
+      }
+    }
+  }
+}
