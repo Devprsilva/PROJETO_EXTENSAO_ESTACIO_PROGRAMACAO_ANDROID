@@ -843,17 +843,25 @@ export default function App() {
             <View style={styles.headerButtonsContainer}>
               <TouchableOpacity 
                 style={styles.headerButton}
-                onPress={toggleMenu}
-                testID="menu-button"
+                onPress={toggleTheme}
+                testID="theme-button"
               >
-                <Ionicons name="settings" size={28} color={isDarkMode ? COLORS.white : COLORS.primary} />
+                <Ionicons 
+                  name={isDarkMode ? "sunny" : "moon"} 
+                  size={28} 
+                  color={isDarkMode ? '#FFFFFF' : '#1E88E5'} 
+                />
               </TouchableOpacity>
               <TouchableOpacity 
                 style={styles.headerButton}
                 onPress={() => setShowAddEvent(true)}
                 testID="add-button"
               >
-                <Ionicons name="add-circle" size={28} color={isDarkMode ? COLORS.white : COLORS.primary} />
+                <Ionicons 
+                  name="add-circle" 
+                  size={28} 
+                  color={isDarkMode ? '#FFFFFF' : '#1E88E5'} 
+                />
               </TouchableOpacity>
             </View>
           </View>
@@ -1049,6 +1057,8 @@ const styles = StyleSheet.create({
   headerButton: {
     padding: 8,
     marginRight: 2,
+    backgroundColor: 'rgba(30, 136, 229, 0.1)',
+    borderRadius: 8,
   },
   headerContent: {
     alignItems: 'center',
